@@ -4,5 +4,88 @@
 \input{preamble}
 
 \begin{document}
-    test text
+    The basic outline/plan
+    \begin{itemize}
+        \item Lefschetz condition for ``nice'' DM stack, following Hartshorn ASAV chapter 4, begin a definition here
+        \item something
+    \end{itemize}    
+
+    DM Stack basicially means that the stablizers groups are all finite.
+
+    \section{Introduction}
+
+    \begin{definition}
+        \label{def:Lef}
+        this is where the definition of \textbfu{Lef} for weighted projective stacks will go
+    \end{definition}
+
+    \begin{definition}
+        \label{def:Leff}
+        this is where the definition of \textbfu{Leff} for weighted projective stacks will go
+    \end{definition}
+
+    \section{Formal Geometry on Stacks}
+    See this source: https://math.stanford.edu/~conrad/papers/formalgaga.pdf
+
+    See this source: https://www.math.uchicago.edu/~emerton/pdffiles/formal-stacks.pdf
+
+    Comment: Probably the most technical part (and the most useful) is going to be here.
+
+    \begin{definition}
+        \textbfu{Formal completion of a stack along a substack}
+    \end{definition}
+
+    \begin{proposition}
+        Following 1.1 of Hartshorn ASAV, equivalence of cd(X-Y) $< n-1$ is equivalent to Lef(X,Y) and Y meets every 
+        effective Cartier divisor on X
+    \end{proposition}
+
+    \begin{definition}
+        \label{def:completeIntersections}
+        Give the correct definition of a \textbfu{complete intersection} on a stack, probably intersection of divisors
+    \end{definition}
+
+    \begin{theorem}
+        Following theorem 1.5 of Hartshorn ASAV, give the correct statement of this theorem. As a first attempt take X to be
+        equal to the weighted projective stack. Something about fake weighted projective stacks (maybe?)
+
+        A complete intersection, Y, has Leff(X,Y) assuming that that Y is dimension at least 2.
+    \end{theorem}
+
+    \section{Application to the Picard Group}
+    
+    \begin{theorem}
+        Following theorem 3.1 in Hartshorn ASAV
+        \begin{proof}
+            What we need for the proof is:
+            \begin{itemize}
+                \item Deformation theory argument
+                \item third point of Hartshorn's version deals with $H^i(Y,I^n/I^{n+1})$ this is where the deformation theory comes in
+                \item We have a line bundle $L$ on $Y$, we want to lift it to $X$
+                \item There are a series of ``natural'' maps $Pic(X) \to Pic(U) \to Pic(\widehat{X}) \to Pic(Y)$. Need to show that
+                      they are all isomorphisms and that their composition is the ``natural'' map $Pix(X) \to Pic(Y)$ that comes
+                      from the pull back $\calL \mapsto i^*(\calL)$ where $i: Y \hookrightarrow X$ is the inclusion of $Y$ into $X$.
+            \end{itemize}
+        \end{proof}
+    \end{theorem}
+
+    \section{Cohomological properties of DM Stacks}
+    Serre duality for tame DM stacks. (Tame basically means that if characteristic = p, then stablizer groups do not have order 
+    $p^n$ for any $n$)
+
+    See: https://link.springer.com/article/10.1007/s40687-022-00367-7
+
+    Serre's theorem on global generation on Stacks
+
+    See: https://arxiv.org/abs/1306.5418
+
+    \begin{theorem}
+        Generalizing theorem 5.18 in Hartshorn's AG
+    \end{theorem}
+
+    \section{Calculate the cohomology of line bundles on weighted projective stack}
+    \begin{theorem}
+        Generalizing theorem 5.1 in Hartshorn's AG
+    \end{theorem}    
+
 \end{document}
