@@ -1,1 +1,8 @@
-Grothendieck-LefschetzForStacks.synctex.gz
+# Ignore intermediate files used in Latex compilation
+*.aux
+*.blg
+*.fbd_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
