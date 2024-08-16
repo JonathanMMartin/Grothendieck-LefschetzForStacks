@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{conrad2005formal}
+Brian Conrad.
+\newblock Formal gaga for artin stacks.
+\newblock {\em preprint}, 2005.
+
+\bibitem{AmpleSUb}
+Robin Hartshorne.
+\newblock {\em Ample subvarieties of algebraic varieties}, volume Vol. 156 of
+  {\em Lecture Notes in Mathematics}.
+\newblock Springer-Verlag, Berlin-New York, 1970.
+\newblock Notes written in collaboration with C. Musili.
+
+\bibitem{DMSerre}
+Denis Levchenko.
+\newblock Serre duality for tame {D}eligne-{M}umford stacks.
+\newblock {\em Res. Math. Sci.}, 9(4):Paper No. 67, 5, 2022.
+
+\bibitem{stacks-project}
+The {Stacks project authors}.
+\newblock The stacks project.
+\newblock \url{https://stacks.math.columbia.edu}, 2024.
+
+\end{thebibliography}
