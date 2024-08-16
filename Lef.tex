@@ -1,0 +1,378 @@
+\documentclass[letterpaper,10pt]{amsart}
+\usepackage{amsmath,amssymb,amsxtra,amsthm, amstext, amscd,amsfonts,fancyhdr, hyperref,enumerate,tikz}
+\usepackage[all,cmtip]{xy}
+\topmargin 0cm
+\textheight 9.2in
+\textwidth 6.50in
+\oddsidemargin .325in
+\evensidemargin .325in
+\voffset -1.25cm
+
+\usepackage[OT2,T1]{fontenc}
+\DeclareSymbolFont{cyrletters}{OT2}{wncyr}{m}{n}
+\DeclareMathSymbol{\Sha}{\mathalpha}{cyrletters}{"58}
+
+\newcommand{\bA}{{\mathbb{A}}}
+\newcommand{\bB}{{\mathbb{B}}}
+\newcommand{\bC}{{\mathbb{C}}}
+\newcommand{\bD}{{\mathbb{D}}}
+\newcommand{\bE}{{\mathbb{E}}}
+\newcommand{\bF}{{\mathbb{F}}}
+\newcommand{\bG}{{\mathbb{G}}}
+\newcommand{\bH}{{\mathbb{H}}}
+\newcommand{\bI}{{\mathbb{I}}}
+\newcommand{\bJ}{{\mathbb{J}}}
+\newcommand{\bK}{{\mathbb{K}}}
+\newcommand{\bL}{{\mathbb{L}}}
+\newcommand{\bM}{{\mathbb{M}}}
+\newcommand{\bN}{{\mathbb{N}}}
+\newcommand{\bO}{{\mathbb{O}}}
+\newcommand{\bP}{{\mathbb{P}}}
+\newcommand{\bQ}{{\mathbb{Q}}}
+\newcommand{\bR}{{\mathbb{R}}}
+\newcommand{\bS}{{\mathbb{S}}}
+\newcommand{\bT}{{\mathbb{T}}}
+\newcommand{\bU}{{\mathbb{U}}}
+\newcommand{\bV}{{\mathbb{V}}}
+\newcommand{\bW}{{\mathbb{W}}}
+\newcommand{\bX}{{\mathbb{X}}}
+\newcommand{\bY}{{\mathbb{Y}}}
+\newcommand{\bZ}{{\mathbb{Z}}}
+
+%      Lower case bold letters
+\newcommand{\Ba}{{\mathbf{a}}}
+\newcommand{\Bb}{{\mathbf{b}}}
+\newcommand{\Bc}{{\mathbf{c}}}
+\newcommand{\Bd}{{\mathbf{d}}}
+\newcommand{\Be}{{\mathbf{e}}}
+\newcommand{\Bf}{{\mathbf{f}}}
+\newcommand{\Bg}{{\mathbf{g}}}
+\newcommand{\Bh}{{\mathbf{h}}}
+\newcommand{\Bi}{{\mathbf{i}}}
+\newcommand{\Bj}{{\mathbf{j}}}
+\newcommand{\Bk}{{\mathbf{k}}}
+\newcommand{\Bl}{{\mathbf{l}}}
+\newcommand{\Bm}{{\mathbf{m}}}
+\newcommand{\Bn}{{\mathbf{n}}}
+\newcommand{\Bo}{{\mathbf{o}}}
+\newcommand{\Bp}{{\mathbf{p}}}
+\newcommand{\Bq}{{\mathbf{q}}}
+\newcommand{\Br}{{\mathbf{r}}}
+\newcommand{\Bs}{{\mathbf{s}}}
+\newcommand{\Bt}{{\mathbf{t}}}
+\newcommand{\Bu}{{\mathbf{u}}}
+\newcommand{\Bv}{{\mathbf{v}}}
+\newcommand{\Bw}{{\mathbf{w}}}
+\newcommand{\Bx}{{\mathbf{x}}}
+\newcommand{\By}{{\mathbf{y}}}
+\newcommand{\Bz}{{\mathbf{z}}}
+
+%     Upper case bold letters
+
+\newcommand{\BB}{\mathbf{B}}
+
+%      Capital script letters
+  \newcommand{\A}{{\mathcal{A}}}
+  \newcommand{\B}{{\mathcal{B}}}
+  \newcommand{\C}{{\mathcal{C}}}
+  \newcommand{\D}{{\mathcal{D}}}
+  \newcommand{\E}{{\mathcal{E}}}
+  \newcommand{\F}{{\mathcal{F}}}
+  \newcommand{\G}{{\mathcal{G}}}
+%\renewcommand{\H}{{\mathcal{H}}}
+  \newcommand{\I}{{\mathcal{I}}}
+  \newcommand{\J}{{\mathcal{J}}}
+  \newcommand{\K}{{\mathcal{K}}}  
+\renewcommand{\L}{{\mathcal{L}}}
+  \newcommand{\M}{{\mathcal{M}}}
+  \newcommand{\N}{{\mathcal{N}}}
+\renewcommand{\O}{{\mathcal{O}}}
+\renewcommand{\P}{{\mathcal{P}}}
+  \newcommand{\Q}{{\mathcal{Q}}}
+  \newcommand{\R}{{\mathcal{R}}}
+\renewcommand{\S}{{\mathcal{S}}}
+  \newcommand{\T}{{\mathcal{T}}}
+  \newcommand{\UUU}{{\mathcal{U}}}
+  \newcommand{\V}{{\mathcal{V}}}
+  \newcommand{\W}{{\mathcal{W}}}
+  \newcommand{\X}{{\mathcal{X}}}
+  \newcommand{\Y}{{\mathcal{Y}}}
+  \newcommand{\Z}{{\mathcal{Z}}}
+  \newcommand{\HH}{\mathcal{H}}
+  \newcommand{\af}{\textnormal{af}}
+
+\newcommand{\FOR}{\text{ for }}
+\newcommand{\FORAL}{\text{ for all }}
+\newcommand{\AND}{\text{ and }}
+\newcommand{\IF}{\text{ if }}
+\newcommand{\OR}{\text{ or }}
+\newcommand{\qand}{\quad\text{and}\quad}
+\newcommand{\qor}{\quad\text{or}\quad}
+\newcommand{\qfor}{\quad\text{for}\quad}
+\newcommand{\qforal}{\quad\text{for all}\quad}
+\newcommand{\qif}{\quad\text{if}\quad}
+\newcommand{\fp}{\mathfrak{p}}
+\newcommand{\fq}{\mathfrak{q}}
+\newcommand{\fa}{\mathfrak{a}}
+\newcommand{\fb}{\mathfrak{b}}
+\newcommand{\fc}{\mathfrak{c}}
+\newcommand{\fm}{\mathfrak{m}}
+\newcommand{\fn}{\mathfrak{n}}
+\newcommand{\fd}{\mathfrak{d}}
+\newcommand{\fA}{\mathfrak{A}}
+\newcommand{\fB}{\mathfrak{B}}
+\newcommand{\fg}{\mathfrak{g}}
+\newcommand{\fh}{\mathfrak{h}}
+\newcommand{\fJ}{\mathfrak{J}} 
+\newcommand{\fX}{\mathfrak{X}} 
+\newcommand{\fY}{\mathfrak{Y}} 
+
+
+\newcommand{\Dim}{\operatorname{dim}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\im}{\operatorname{Im}}
+\newcommand{\re}{\operatorname{Re}}
+\newcommand{\ind}{\operatorname{ind}}
+\newcommand{\nul}{\operatorname{null}}
+\newcommand{\ran}{\operatorname{Ran}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\spn}{\operatorname{span}}
+\newcommand{\Brauer}{\operatorname{Br}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\sing}{\operatorname{sing}}
+\newcommand{\Pic}{\operatorname{Pic}}
+\newcommand{\BI}{\mathbf{I}}
+\newcommand{\BP}{\mathbf{P}}
+\newcommand{\BE}{\mathbf{E}}
+\newcommand{\BA}{\mathbf{A}}
+\newcommand{\Var}{\mathbf{Var}}
+\newcommand{\Cov}{\mathbf{Cov}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Sel}{\operatorname{Sel}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\PGL}{\operatorname{PGL}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\spec}{\operatorname{Spec}} 
+\newcommand{\sqf}{\operatorname{sqf}} 
+\newcommand{\DD}{\mathbf{D}}
+\newcommand{\GG}{\mathbf{G}}
+\newcommand{\UU}{\mathbf{U}}
+\newcommand{\VV}{\mathbf{V}}
+\newcommand{\CC}{\mathbf{C}}
+\newcommand{\ff}{\mathfrak{f}}
+\newcommand{\fu}{\mathfrak{u}}
+\newcommand{\fU}{\mathfrak{U}}
+\newcommand{\fS}{\mathfrak{S}}
+\newcommand{\fC}{\mathfrak{C}}
+\newcommand{\fF}{\mathfrak{F}}
+\newcommand{\fG}{\mathfrak{G}}
+\newcommand{\fD}{\mathfrak{D}}
+\newcommand{\depth}{\operatorname{depth}} 
+\newcommand{\iden}{\operatorname{id}} 
+\newcommand{\BG}{\operatorname{BG}} 
+\newcommand{\ep}{\varepsilon}
+\newcommand{\et}{\acute{\textnormal{e}}\textnormal{t}}
+\newcommand{\Ext}{\mathcal{E}xt}
+\newcommand{\Hi}{H^{-1}(\mathcal{G})}
+\newcommand{\Ho}{H^{0}(\mathcal{G})}
+\newcommand{\Sym}{\operatorname{Sym}}
+
+\newcommand{\bbeta}{\boldsymbol \beta}
+\newcommand{\balpha}{\boldsymbol \alpha}
+
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\Span}{\operatorname{Span}} 
+\newcommand{\Jac}{\operatorname{Jac}} 
+
+
+\renewcommand{\ae}{\operatorname{a.\!e.}}
+\newcommand{\AD}{\mathrm{A}(\bD)}
+\newcommand{\MT}{\mathrm{M}(\bT)}
+\newcommand{\rC}{\mathrm{C}}
+\newcommand{\CT}{\mathrm{C}(\bT)}
+\newcommand{\dlim}{\displaystyle\lim\limits}
+\newcommand{\dint}{\displaystyle\int\limits}
+\newcommand{\dsum}{\displaystyle\sum\limits}
+\newcommand{\ol}{\overline}
+\newcommand{\ul}{\underline}
+\newcommand{\one}{\boldsymbol{1}}
+\newcommand{\upchi}{{\raise.35ex\hbox{$\chi$}}}
+\newcommand{\mt}{\emptyset}
+\newcommand{\lip}{\langle}
+\newcommand{\rip}{\rangle}
+\newcommand{\ip}[1]{\lip #1 \rip}
+\newcommand{\wh}{\widehat}
+\newcommand{\sot}{\textsc{sot}}
+\newcommand{\wot}{\textsc{wot}}
+\newcommand{\SL}{\operatorname{SL}}
+\newcommand{\Vol}{\operatorname{Vol}}
+\newcommand{\rad}{\operatorname{rad}} 
+\newcommand{\modfour}{\tiny\mbox{ ($4$)}}
+\newcommand{\modeight}{\tiny\mbox{ ($8$)}}
+\newcommand{\modtwo}{\tiny\mbox{ ($2$)}}
+\newcommand{\BS}{\text{BS}}
+\newcommand{\bo}{\operatorname{Box}}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Xcan}{X^{\textnormal{can}}}
+\newcommand{\reg}{\textnormal{reg}}
+\newcommand{\tor}{\textnormal{tor}}
+\newcommand{\an}{\textnormal{an}}
+\newcommand{\red}{\textnormal{red}}
+
+\newcommand{\QC}{\operatorname{QC}_\infty}
+\newcommand{\Dbul}{\textnormal{D}^\bullet}
+\newcommand{\Db}{\textnormal{D}^{\textnormal{b}}}
+\newcommand{\dua}{\mathfrak{D}}
+\newcommand{\eval}{\operatorname{eval}}
+
+\newcommand{\Lef}{\operatorname{Lef}}
+\newcommand{\Leff}{\operatorname{Leff}}
+\newcommand{\cd}{\operatorname{cd}}
+\newcommand{\Coh}{\operatorname{Coh}}
+\newcommand{\fO}{\O_{\widehat{\fX}}}
+\newcommand{\ffX}{\widehat{\fX}}
+
+
+
+
+
+
+
+
+\makeatletter
+\@namedef{subjclassname@2010}{%
+  \textup{2010} Mathematics Subject Classification}
+\makeatother
+
+% Define your theoremstyles, numbering here.
+%\theoremstyle{plain}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{claim}{Claim}
+
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{TheoremA}{Theorem A}
+\newtheorem*{TheoremB}{Theorem B}
+\newtheorem*{TheoremC}{Theorem C}
+\newtheorem*{theorem*}{Theorem}
+
+\newtheorem{Idea}{Idea}
+
+\newtheorem{goal}{Goal}
+\newtheorem{notation}{Notation}
+
+\newtheorem*{proof of (1)}{proof of (1)}
+\newtheorem*{proof of (2)}{proof of (2)}
+
+\newtheorem*{mainTheoremA}{Main theorem A}
+\newtheorem*{mainTheoremB}{Main theorem B}
+
+\newtheorem{informal question}[theorem]{Informal Question}
+
+
+
+
+\usepackage{color}
+\newif\ifhascomments \hascommentstrue
+\ifhascomments
+  \newcommand{\Editor}[1]{{\color{red}[[\ensuremath{\spadesuit\spadesuit\spadesuit} #1]]}}
+  \newcommand{\brett}[1]{{\color{blue}[[\ensuremath{\heartsuit\heartsuit\heartsuit} #1]]}}
+\else
+  \newcommand{\matt}[1]{}
+  \newcommand{\brett}[1]{}
+\fi
+
+
+
+\numberwithin{equation}{section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{}
+
+\begin{section}{Formal stacks}
+ We follow Conrad here in \cite{conrad2005formal}. Let $\fX$ be a locally Noetherian algebraic stack and 
+ $X_0\subseteq \vert \fX\vert$ a closed subset. We assume that $\fX$ is smooth and proper over an algebraically closed field
+ of characteristic 0. 
+\begin{remark}
+The notation $\vert \fX\vert$ corresponds to the topological space associated to the algebraic stack $\fX$. This is what we use for the
+Zariski topology.See \cite[tag 04XE ]{stacks-project} in the stacks project, or look up "points of algebraic stacks there".
+\end{remark}
+
+ Now we consider the system of all coherent ideals $\I_\alpha$ with zero locus $X_0$. In the Deligne-Mumford situation perhaps we can just
+ use $\{I^n\}$ assume that $X_0$ is irreducible. In any case for a coherent sheaf $F\in \Coh(\fX)$ we define
+ \[\widehat{F}:=\lim_{\leftarrow, \alpha}\O_{\fX}/\I_\alpha F\] 
+
+ Taking $F=\O_\fX$ we obtain \[\O_{\widehat{\fX}}:=\widehat{\O_\fX}\]
+ This gives us a ringed topos with structure sheaf $\fO$, the underlying site is the lis-etale site. In our situation as we are working with a
+ Noetherian DM stack, Conrad notes we can use the etale site of $\fX$. We from now on denote $\ffX$ as the completion of $\fX$ along $X_0$.
+ 
+
+\begin{definition}[The first Lefschetz codition]\label{def:Lef}
+    Here we follow \cite[Chapter IV]{AmpleSUb}. Let $\fX$ be a DM stack.(We could do Artin stack as well, but we probably need locally Noetherian to apply Conrad) Let $\Y\hookrightarrow \fX$ be a closed substack. Let $\ffX$ be the completion of
+    $\fX$ along the closed set $\vert \fY\subseteq \vert$. (By \cite[tag 0H20]{stacks-project} this is a closed subset). We say $(\fX,\Y)$ satisfies
+    the Lefscetz condition, written $\Lef(\fX,\Y)$  if for every open substack $\UUU$ of $\fX$ with $\Y\ra\UUU\ra \fX$ and every locally free sheaf $\E$ on $\UUU$ 
+    there is an open substack $\UUU^\prime$ with $\Y\ra \UUU^\prime\ra \UUU$ such that the natural map 
+    \[H^0(\UUU^\prime,\E)\ra H^0(\widehat{\fX},\widehat{\E})\] is an isomorphism.   
+
+\end{definition}
+
+\begin{definition}[The effective Lefschetz condition]\label{def:Leff}
+If $\fX$ and $\Y$ are as in definition \ref{def:Lef}. We say that $(\fX,\Y)$ satisfy the effective Lefschetz condition written $\Leff(\fX,\Y)$
+if $\Lef(\fX,\Y)$ and in addition for every locally free sheaf $\E$ on $\widehat{\fX}$ there is an open substack $\Y\ra \UUU\ra \fX$ 
+and a locally free sheaf $E$ on $\UUU$ with $\widehat{E}\cong \E$.  
+    
+\end{definition}
+
+\begin{remark}
+Here we use section 2 of \cite[Section 2]{conrad2005formal} to pull-back sections.
+\end{remark}
+ 
+
+\begin{definition}\label{def:coDim}
+Let $\fX$ be a dm stack. The cohomological dimension of $\fX$  (denoted by $\cd(\fX)$ )is the smallest element of
+ $\{0,1,2,\ldots\}\cup\{\infty\}$ such that if $i>\cd(\fX)$ then $H^i(\fX,F)=0$ for all coherent sheaves $F$ on $\fX$.
+\end{definition}
+
+\end{section}
+
+\begin{section}{The Basics}
+
+We want to prove the following:
+
+\begin{proposition}
+Let $\fX$ be a smooth tame DM stack of dimension $n$ with projective coarse moduli space. 
+Let $\Y\hookrightarrow \fX$ be a closed substack.
+Suppose that $\cd(\fX-\Y)<n-1$. Then $\Lef(\fX,\Y)$ is true and every effective Cartier divisor on $\fX$ meets $\Y$.
+\end{proposition}
+\begin{proof}
+Let $\Y\ra \UUU$ and let $E$ be a locally free sheaf on $\UUU$. By \cite[Theorem 1]{DMSerre} the canonical sheaf 
+$omega:=\omega_\fX$ is a dualizing sheaf. Now consider the sheaf $F=\hom_{\O_\UUU}(E,\omega\vert_\UUU)$.
+\end{proof}
+
+
+\end{section}
+
+
+
+\bibliography{bib}
+\bibliographystyle{plain}
+
+\end{document}
