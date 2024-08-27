@@ -1,7 +1,7 @@
 # Ignore intermediate files used in Latex compilation
 *.aux
 *.blg
-*.fbd_latexmk
+*.fdb_latexmk
 *.fls
 *.log
 *.out
